@@ -1,0 +1,126 @@
+.team {
+  padding-top: 30px;
+  position: relative;
+
+  @media (min-width: $breakpoint-md) {
+    padding-top: 60px;
+  }
+
+  //  .team__pagination
+  &__pagination {
+    &.swiper-pagination {
+      bottom: -46px;
+      .swiper-pagination-bullet {
+        height: 16px;
+        width: 16px;
+        &.swiper-pagination-bullet-active {
+          background: $color-regular;
+        }
+      }
+    }
+  }
+
+  // .team__swiper
+
+  &__swiper {
+    background: #f5f5fa;
+    border-radius: 12px;
+    margin: 0px 0 106px 0;
+  }
+
+  // .team__wrapper
+
+  &__wrapper {
+  }
+
+  // .team__slide
+
+  &__slide {
+    @media (min-width: $breakpoint-lg) {
+      display: flex;
+    }
+  }
+
+  // .team__image
+
+  &__image {
+    height: 500px;
+    & > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    @media (min-width: $breakpoint-md) {
+    }
+
+    @media (min-width: $breakpoint-lg) {
+      flex: 0 0 400px;
+      height: auto;
+    }
+
+    @media (min-width: $breakpoint-xl) {
+      height: 344px;
+    }
+
+    @media (min-width: $breakpoint-xxl) {
+      height: 298px;
+    }
+  }
+
+  // .team__inner
+
+  &__inner {
+    padding: 30px;
+    flex: 1 1 55%;
+  }
+
+  // .team__inner-link
+
+  &__inner-link {
+    color: $color-regular;
+    @include title__fw-fz-lh(700, 14px, 17px);
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 0%;
+      transform: translate(150%, -50%) rotate(45deg);
+      width: 6px;
+      height: 6px;
+      border-top: 2px solid $color-regular;
+      border-right: 2px solid $color-regular;
+    }
+  }
+
+  // .team__inner-title
+
+  &__inner-title {
+    margin: 5px 0 30px 0;
+    @include title__fw-fz-lh(700, 30px, 37px);
+    @include red_color_text;
+  }
+
+  // .team__inner-name
+
+  &__inner-name {
+    & > p {
+      @include title__fw-fz-lh(700, 16px, 20px);
+      color: $grey-color-text;
+      margin-bottom: 6px;
+    }
+    & > p + p {
+      @include title__fw-fz-lh(400, 14px, 22px);
+      color: $grey-color-text;
+    }
+  }
+}
+
+.swiper {
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
+.swiper-pagination {
+}

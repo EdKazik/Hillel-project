@@ -1,0 +1,61 @@
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;
+$breakpoint-xl: 1440px;
+$breakpoint-xxl: 1920px;
+
+$background-main: #323264;
+$background-alt: #46466e;
+$background-soft: #686887;
+$background-accent: #f0145a;
+
+$color-active: #006ccf;
+$color-hover: #0085ff;
+$color-regular: #24a3ff;
+
+$color-text: #ffffff;
+
+$grey-color: #f5f5fa;
+$grey-alt-color: #ededf7;
+$grey-color-text: #b3b3ba;
+$grey-separator-color: #e6e6f0;
+
+$gradient-main: linear-gradient(
+  128.63deg,
+  #323264 0%,
+  #323264 73.96%,
+  #a54b5f 100%
+);
+$gradient-soft: linear-gradient(
+  42.01deg,
+  #323264 14.33%,
+  #323264 51.39%,
+  #7a425e 87.53%
+);
+$gradient-red: linear-gradient(323.35deg, #f0145a 6.7%, #693264 70.36%);
+$gradient-supersoft: linear-gradient(
+  228.57deg,
+  #323264 11.93%,
+  #323264 57.17%,
+  #643e72 87.46%
+);
+$gradient-red-text: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+
+$f-z__sm: 8px;
+$f-z__md: 12px;
+$f-z__lg: 16px;
+$f-z__xl: 20px;
+$f-z__xxl: 38px;
+
+$main-radius: 8px;
+
+@mixin title__fw-fz-lh($font-weight, $font-size, $line-height) {
+  font-weight: $font-weight;
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+@mixin red_color_text {
+  background: $gradient-red-text;
+  color: transparent;
+  background-clip: text;
+}

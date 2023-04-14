@@ -1,0 +1,78 @@
+.works {
+}
+.container {
+}
+.cards {
+  // .cards__title-box
+
+  &__title-box {
+    & > a {
+      @include title__fw-fz-lh(700, 14px, 17px);
+      color: $color-regular;
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 40%;
+        transform: translateY(-50%);
+        right: -17%;
+        width: 6px;
+        height: 6px;
+        border-bottom: 2px solid $color-regular;
+        border-right: 2px solid $color-regular;
+        transform: rotate(-45deg);
+        // border: 1px dashed red;
+      }
+    }
+    & > h2 {
+      @include title__fw-fz-lh(700, 30px, 37px);
+      background: $gradient-red-text;
+      color: transparent;
+      background-clip: text;
+      margin-top: 10px;
+    }
+  }
+
+  // .cards__list
+
+  &__list {
+    @media (min-width: $breakpoint-md) {
+      display: flex;
+      flex-flow: wrap;
+      gap: 60px;
+    }
+  }
+}
+.card {
+  // .card__item
+
+  &__item {
+    margin-top: 30px;
+    & > h2 {
+      @include title__fw-fz-lh(700, 22px, 27px);
+      color: $color-regular;
+      margin-bottom: 15px;
+    }
+    & > p {
+      @include title__fw-fz-lh(400, 16px, 26px);
+      color: $color-text;
+    }
+
+    @media (min-width: $breakpoint-md) {
+      flex: 1 1 40%;
+    }
+
+    @media (min-width: $breakpoint-lg) {
+      flex: 1 1 25%;
+    }
+  }
+
+  // .card__item-svg
+
+  &__item-svg {
+    width: 92px;
+    height: 92px;
+    margin-bottom: 30px;
+  }
+}

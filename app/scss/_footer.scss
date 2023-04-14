@@ -1,0 +1,149 @@
+.footer {
+  background: $grey-color;
+  padding-bottom: 30px;
+
+  // .footer__list
+
+  &__list {
+    border-top: 2px solid $grey-separator-color;
+    padding: 30px 0 0 0;
+
+    @media (min-width: $breakpoint-md) {
+      display: flex;
+      align-items: center;
+      flex-flow: wrap;
+    }
+  }
+
+  // .footer__adress
+
+  &__adress {
+    text-align: center;
+    margin-bottom: 21px;
+
+    @media (min-width: $breakpoint-md) {
+      display: flex;
+      gap: 20px;
+      flex: 1 1 50%;
+      order: 1;
+      margin: 0;
+      padding: 0;
+      align-items: center;
+      justify-content: start;
+    }
+  }
+
+  // .footer__adress-item
+
+  &__adress-item {
+    @include title__fw-fz-lh(400, 16px, 20px);
+    color: $background-main;
+    margin-bottom: 10px;
+
+    @media (min-width: $breakpoint-md) {
+      margin: 0;
+    }
+  }
+
+  // .footer__adress-link
+
+  &__adress-link {
+    @include title__fw-fz-lh(700, 12px, 15px);
+    color: $color-regular;
+  }
+
+  // .footer__contact-info
+
+  &__contact-info {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+    @media (min-width: $breakpoint-md) {
+      flex: 1 1 100%;
+      order: 3;
+      display: flex;
+      flex-flow: row;
+      gap: 20px;
+      margin: 21px 0 0 0;
+    }
+  }
+
+  // .footer__contact-logo-svg
+
+  &__contact-logo-svg {
+    width: 38px;
+    height: 38px;
+    fill: $color-regular;
+
+    &:hover {
+      fill: $background-accent;
+    }
+  }
+  &__contact-logo-link {
+    background: grey;
+    margin-bottom: 10px;
+    @media (min-width: $breakpoint-md) {
+      margin: 0;
+    }
+  }
+
+  // .footer__contact-tel
+
+  &__contact-tel {
+    @include title__fw-fz-lh(700, 16px, 20px);
+    color: $background-alt;
+    margin-bottom: 10px;
+    @media (min-width: $breakpoint-md) {
+      margin: 0;
+    }
+  }
+
+  // .footer__contact-email
+
+  &__contact-email {
+    @include title__fw-fz-lh(700, 16px, 20px);
+    color: $color-regular;
+
+    &:hover {
+      color: $background-accent;
+    }
+
+    @media (min-width: $breakpoint-md) {
+    }
+  }
+
+  // .footer__copyright
+
+  &__copyright {
+    text-align: center;
+    @include title__fw-fz-lh(400, 16px, 20px);
+    color: $grey-color-text;
+    margin-top: 30px;
+    @media (min-width: $breakpoint-md) {
+      order: 2;
+      flex: 1 1 50%;
+      margin: 0;
+      text-align: end;
+    }
+  }
+}
+.footer-contact-item {
+  @media (min-width: $breakpoint-md) {
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0%;
+      transform: translate(-200%, -50%);
+      width: 6px;
+      height: 6px;
+      background: #b3b3ba;
+      border-radius: 50%;
+    }
+  }
+}
+
+// _____________________________________________________________________________

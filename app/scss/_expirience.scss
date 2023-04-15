@@ -55,6 +55,12 @@
     &.active {
       @include red_color_text;
     }
+    &:hover {
+      color: $background-accent;
+    }
+    @media (min-width: $breakpoint-md) {
+      @include title__fw-fz-lh(700, 38px, 46px);
+    }
   }
 }
 .container {

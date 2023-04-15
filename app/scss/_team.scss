@@ -80,6 +80,9 @@
     color: $color-regular;
     @include title__fw-fz-lh(700, 14px, 17px);
     position: relative;
+    &:hover {
+      color: $background-accent;
+    }
     &::before {
       content: "";
       position: absolute;

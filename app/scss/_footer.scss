@@ -50,6 +50,9 @@
   &__adress-link {
     @include title__fw-fz-lh(700, 12px, 15px);
     color: $color-regular;
+    &:hover {
+      color: $background-accent;
+    }
   }
 
   // .footer__contact-info
@@ -81,8 +84,8 @@
     }
   }
   &__contact-logo-link {
-    background: grey;
     margin-bottom: 10px;
+    line-height: 4px;
     @media (min-width: $breakpoint-md) {
       margin: 0;
     }
@@ -94,6 +97,9 @@
     @include title__fw-fz-lh(700, 16px, 20px);
     color: $background-alt;
     margin-bottom: 10px;
+    &:hover {
+      color: $background-accent;
+    }
     @media (min-width: $breakpoint-md) {
       margin: 0;
     }

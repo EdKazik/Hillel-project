@@ -10,6 +10,9 @@
       @include title__fw-fz-lh(700, 14px, 17px);
       color: $color-regular;
       position: relative;
+      &:hover {
+        color: $background-accent;
+      }
 
       &::before {
         content: "";
@@ -22,7 +25,6 @@
         border-bottom: 2px solid $color-regular;
         border-right: 2px solid $color-regular;
         transform: rotate(-45deg);
-        // border: 1px dashed red;
       }
     }
     & > h2 {

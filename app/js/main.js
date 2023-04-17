@@ -51,3 +51,18 @@ const swiper = new Swiper('.swiper', {
 // 	delay: .6,
 // 	transition: 'cubic-bezier(0,0,0,1)'
 // });
+
+
+(function() {
+	const headerBurgerOpen = document.querySelector('.header__publications-burger-menu');
+	const headerNavigation = document.querySelector('.header__publications-navi');
+	const headerBurgerClose = document.querySelector('.header__publications-navi-close');
+
+	headerBurgerOpen.addEventListener('click', event => {
+		headerNavigation.classList.add('active')
+	});
+
+	headerBurgerClose.addEventListener('click', event => {
+		headerNavigation.classList.remove('active')
+	});
+})();

@@ -1,13 +1,23 @@
-.main {
-  background: $grey-color;
-  padding: 30px 0;
-  border-radius: 12px 12px 0px 0px;
-}
+// ________________________________________________________________
 
-.publications {
-  // .publications__title
+// внести єти стили для контейнера паблик и футер на 1920px
 
-  &__title {
+// @media (min-width: $breakpoint-xxl) {
+//       max-width: 1600px;
+//     }
+
+.public {
+  // .public__publications
+
+  &__publications {
+    background: $grey-color;
+    padding: 30px 0;
+    border-radius: 12px 12px 0px 0px;
+  }
+
+  // .public__publications-title
+
+  &__publications-title {
     margin-bottom: 30px;
 
     & > h2 {
@@ -20,9 +30,9 @@
     }
   }
 
-  // .publications__title-link
+  // .public__publications-title-link
 
-  &__title-link {
+  &__publications-title-link {
     color: $color-regular;
     @include title__fw-fz-lh(700, 14px, 17px);
     position: relative;
@@ -43,9 +53,9 @@
     }
   }
 
-  // .publications__news
+  // .public__publications-news
 
-  &__news {
+  &__publications-news {
     @media (min-width: $breakpoint-md) {
       display: flex;
       flex-flow: wrap;
@@ -53,9 +63,9 @@
     }
   }
 
-  // .publications__news-item
+  // .public__publications-news-item
 
-  &__news-item {
+  &__publications-news-item {
     border-radius: 8px;
     overflow: hidden;
     background: #ffffff;
@@ -71,20 +81,15 @@
       width: 100%;
       // height: 100%;
       //   padding-bottom: 30px;
-      &:nth-child(1) {
-        // padding-bottom: 105px;
-        // flex: 1 100%;
-      }
     }
     @media (min-width: $breakpoint-lg) {
       flex: 1 1 30%;
     }
   }
 
-  // .publications__news-item-img
+  // .public__publications-news-item-img
 
-  &__news-item-img {
-    // width: 100%;
+  &__publications-news-item-img {
     height: 200px;
     & > img {
       width: 100%;
@@ -98,9 +103,9 @@
     }
   }
 
-  // .publications__news-item-title
+  // .public__publications-news-item-title
 
-  &__news-item-title {
+  &__publications-news-item-title {
     padding: 30px;
 
     & > h3 {
@@ -116,9 +121,9 @@
     }
   }
 
-  // .publications__news-item-text
+  // .public__publications-news-item-text
 
-  &__news-item-text {
+  &__publications-news-item-text {
     border-top: 4px solid $grey-separator-color;
     padding-top: 15px;
     & > p {
@@ -127,5 +132,11 @@
     @media (min-width: $breakpoint-md) {
       // padding: 0;
     }
+  }
+}
+.container {
+  // .container__publications
+
+  &__publications {
   }
 }

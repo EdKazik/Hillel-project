@@ -5,6 +5,7 @@
   }
 
   // .experience__tabs
+  // overflow: hidden;
   &__tabs {
     @media (min-width: $breakpoint-lg) {
       display: flex;

@@ -82,7 +82,7 @@ a {
   @media (min-width: $breakpoint-xxl) {
     // от 1920px до бесконечности
     max-width: 1660px;
-    padding: 0 160px;
+    // padding: 0 160px;
   }
 }
 
@@ -101,7 +101,7 @@ a {
     // от 768px до бесконечности
     max-width: 648px;
     margin: 0 auto;
-    padding: 0 60px;
+    // padding: 0 60px;
   }
 
   @media (min-width: $breakpoint-lg) {
@@ -117,6 +117,6 @@ a {
   @media (min-width: $breakpoint-xxl) {
     // от 1920px до бесконечности
     max-width: 1600px;
-    padding: 0 160px;
+    // padding: 0 160px;
   }
 }

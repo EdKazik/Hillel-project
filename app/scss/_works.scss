@@ -6,9 +6,11 @@
   // .cards__title-box
 
   &__title-box {
+    margin-bottom: 30px;
     & > a {
       @include title__fw-fz-lh(700, 14px, 17px);
       color: $color-regular;
+      text-transform: uppercase;
       position: relative;
       &:hover {
         color: $background-accent;
@@ -34,6 +36,10 @@
       background-clip: text;
       margin-top: 10px;
     }
+
+    @media (min-width: $breakpoint-md) {
+      margin-bottom: 60px;
+    }
   }
 
   // .cards__list
@@ -50,7 +56,6 @@
   // .card__item
 
   &__item {
-    margin-top: 30px;
     & > h2 {
       @include title__fw-fz-lh(700, 22px, 27px);
       color: $color-regular;

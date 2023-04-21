@@ -99,24 +99,27 @@ a {
 
   @media (min-width: $breakpoint-md) {
     // от 768px до бесконечности
-    max-width: 648px;
+    // max-width: 528px;
     margin: 0 auto;
-    // padding: 0 60px;
+    padding: 0 60px;
   }
 
   @media (min-width: $breakpoint-lg) {
     // от 1024px до бесконечности
-    max-width: 904px;
+    // max-width: 784px;
+    max-width: 960px;
   }
 
   @media (min-width: $breakpoint-xl) {
     // от 1440px до бесконечности
-    max-width: 1320px;
+    max-width: 1200px;
+    // max-width: 1320px;
   }
 
   @media (min-width: $breakpoint-xxl) {
     // от 1920px до бесконечности
-    max-width: 1600px;
-    // padding: 0 160px;
+    // max-width: 1240px;
+    max-width: 1480px;
+    padding: 0;
   }
 }
